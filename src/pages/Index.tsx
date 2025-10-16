@@ -4,10 +4,12 @@ import { Skills } from "@/components/portfolio/Skills";
 import { Projects } from "@/components/portfolio/Projects";
 import { Contact } from "@/components/portfolio/Contact";
 import { Footer } from "@/components/portfolio/Footer";
+import { Navbar } from "@/components/portfolio/Navbar";
 
 const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
+      <Navbar />
       <main className="flex-1">
         <Header />
         <About />

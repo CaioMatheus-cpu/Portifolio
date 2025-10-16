@@ -1,32 +1,60 @@
 import { Badge } from "@/components/ui/badge";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
-const skills = [
-  "React",
-  "TypeScript",
-  "Node.js",
-  "Tailwind CSS",
-  "Next.js",
-  "PostgreSQL",
-  "Docker",
-  "GraphQL",
-  "Prisma",
+const skillCategories = [
+  {
+    title: "Linguagens",
+    skills: ["TypeScript", "JavaScript", "Python", "SQL"],
+  },
+  {
+    title: "Front-end",
+    skills: ["React", "Next.js", "Tailwind CSS", "HTML5", "CSS3"],
+  },
+  {
+    title: "Back-end",
+    skills: ["Node.js", "Express", "Prisma", "PostgreSQL", "Docker"],
+  },
+  {
+    title: "Ferramentas",
+    skills: ["Git", "GitHub", "Jest", "Vercel", "Figma"],
+  },
 ];
 
 export function Skills() {
   return (
     <section id="skills" className="w-full py-12 md:py-24">
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center space-y-4 text-center">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center space-y-4 text-center mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
             Habilidades
           </h2>
-          <div className="flex flex-wrap justify-center gap-2 max-w-2xl">
-            {skills.map((skill) => (
-              <Badge key={skill} variant="secondary" className="text-lg">
-                {skill}
-              </Badge>
-            ))}
-          </div>
+          <p className="max-w-[600px] text-muted-foreground">
+            Estas são as tecnologias e ferramentas com as quais tenho mais
+            experiência.
+          </p>
+        </div>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {skillCategories.map((category) => (
+            <Card key={category.title}>
+              <CardHeader>
+                <CardTitle>{category.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <Badge key={skill} variant="secondary">
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

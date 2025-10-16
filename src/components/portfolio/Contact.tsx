@@ -1,23 +1,55 @@
 import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export function Contact() {
+  const email = "[seu.email@exemplo.com]";
   return (
     <section id="contact" className="w-full py-12 md:py-24">
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center space-y-4 text-center">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center space-y-6 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
-            Contato
+            Vamos Conversar
           </h2>
-          <p className="max-w-[600px] text-muted-foreground">
-            Estou aberto a novas oportunidades e colaborações. Sinta-se à
-            vontade para entrar em contato.
+          <p className="max-w-[600px] text-muted-foreground md:text-xl">
+            Estou sempre aberto a novas oportunidades, colaborações e um bom
+            bate-papo sobre tecnologia. Sinta-se à vontade para entrar em
+            contato.
           </p>
-          <Button asChild>
-            <a href="mailto:seu-email@example.com">
-              <Mail className="mr-2 h-4 w-4" /> Enviar E-mail
+          <div className="p-4 bg-secondary rounded-lg">
+            <a
+              href={`mailto:${email}`}
+              className="text-lg font-semibold hover:underline"
+            >
+              {email}
             </a>
-          </Button>
+          </div>
+          <div className="flex space-x-4">
+            <Button variant="outline" size="icon" asChild>
+              <a
+                href="https://www.youtube.com/watch?v=TsaLQAetPLU"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a
+                href="https://www.linkedin.com/login/pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" asChild>
+              <a href={`mailto:${email}`} aria-label="Email">
+                <Mail className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
