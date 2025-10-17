@@ -8,7 +8,6 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">
           © {currentYear} Caio Matheus Bezerra da silva. Todos os direitos reservados.
         </p>
-        <MadeWithDyad />
       </div>
     </footer>
   );
