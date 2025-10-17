@@ -8,20 +8,13 @@ export function About() {
           </h2>
           <div className="max-w-3xl mx-auto text-muted-foreground md:text-xl space-y-4 text-left">
             <p>
-              Olá! Sou [Seu Nome], um [Seu Título Profissional] apaixonado por
-              tecnologia e pela criação de soluções que impactam positivamente a
-              vida das pessoas. Minha jornada na programação começou com [conte
-              uma breve história sobre como começou], e desde então, tenho me
-              dedicado a construir aplicações web robustas, escaláveis e com
-              foco na experiência do usuário.
+              Oi! Sou o Caio Matheus, um desenvolvedor full stack que adora transformar ideias em projetos que realmente fazem a diferença.
+Tudo começou com a curiosidade de entender como a tecnologia funciona — e acabou virando paixão por criar aplicações completas, do backend ao frontend, sempre com foco em performance e usabilidade.
             </p>
             <p>
-              Acredito que a chave para um bom produto digital está na união
-              entre um código bem estruturado e um design que seja ao mesmo
-              tempo bonito e funcional. Sou um profissional [Adjetivo 1] e
-              [Adjetivo 2], sempre buscando aprender novas tecnologias e
-              aprimorar minhas habilidades para enfrentar os desafios do
-              mercado. Meu objetivo é [Seu Objetivo Principal do Portfólio].
+              Acredito que a chave para um bom produto digital está na união entre um código bem estruturado e um design que seja ao mesmo tempo bonito e funcional.
+Sou um profissional dedicado e detalhista, sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para enfrentar os desafios do mercado.
+Meu objetivo é criar soluções digitais que unam eficiência, usabilidade e impacto real na vida das pessoas.
             </p>
           </div>
         </div>

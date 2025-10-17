@@ -10,19 +10,19 @@ export function Header() {
     >
       <div className="container mx-auto text-center px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6">
-          <Avatar className="h-32 w-32">
+          <Avatar className="h-64 w-64">
             <AvatarImage
-              src="https://github.com/shadcn.png"
+              src="src\components\portfolio\AFOTO.jpg"
               alt="[Seu Nome Completo]"
             />
             <AvatarFallback>SN</AvatarFallback>
           </Avatar>
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              [Seu Nome Completo]
+              Caio Matheus
             </h1>
             <p className="text-xl text-muted-foreground">
-              [Seu Título Profissional]
+              Desenvolvedor Full Stack & Entusiasta de Tecnologia
             </p>
             <p className="max-w-xl mx-auto text-muted-foreground pt-2">
               Transformando ideias em realidade digital com código limpo e

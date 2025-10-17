@@ -33,7 +33,7 @@ export function Navbar() {
     >
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <a href="#home" className="text-lg font-bold">
-          [Seu Nome]
+          Caio Matheus
         </a>
         <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
