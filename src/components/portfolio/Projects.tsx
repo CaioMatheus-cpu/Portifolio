@@ -12,35 +12,28 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Sistema de Gestão de Tarefas - TaskFy",
+    title: "Meu Pequeno Jardim",
     description:
-      "Uma aplicação web full-stack que ajuda usuários a organizar suas tarefas diárias com um sistema de prioridades.",
-    technologies: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "PostgreSQL",
-      "Tailwind CSS",
-    ],
-    demoUrl: "https://www.youtube.com/watch?v=BU-w2_Aae54",
-    repoUrl:
-      "https://docs.github.com/pt/repositories/creating-and-managing-repositories/quickstart-for-repositories",
+      "Aplicação interativa voltada ao desenvolvimento da inteligência emocional em crianças, combinando tecnologia e aprendizado lúdico.",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    demoUrl: "#", // link do deploy ou vídeo, se disponível
+    repoUrl: "https://github.com/CaioMatheusDev/meu-pequeno-jardim",
   },
   {
-    title: "Plataforma de E-commerce",
+    title: "HandMove",
     description:
-      "Solução completa para vendas online com foco em performance e experiência do usuário.",
-    technologies: ["Next.js", "Stripe", "Prisma", "GraphQL"],
-    demoUrl: "#",
-    repoUrl: "#",
+      "Sistema que utiliza visão computacional para controlar um projetor por meio de gestos, explorando o potencial da interação sem toque.",
+    technologies: ["Python", "OpenCV", "Mediapipe", "Raspberry Pi"],
+    demoUrl: "#", // vídeo de demonstração
+    repoUrl: "https://github.com/CaioMatheusDev/handmove",
   },
   {
-    title: "Aplicativo de Gerenciamento",
+    title: "Sistema de Seguidor de Linha Inteligente",
     description:
-      "Ferramenta para otimizar tarefas e aumentar a produtividade de equipes.",
-    technologies: ["React Native", "Firebase", "TypeScript"],
+      "Robô autônomo com visão computacional e controle PID, capaz de seguir linhas e tomar decisões com base em cores e curvas detectadas.",
+    technologies: ["Python", "OpenCV", "Raspberry Pi", "PID Control"],
     demoUrl: "#",
-    repoUrl: "#",
+    repoUrl: "https://github.com/CaioMatheusDev/line-follower-ai",
   },
 ];
 
