@@ -1,6 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
+import AFOTO from "./AFOTO.jpg";
+
 
 export function Header() {
   return (
@@ -10,11 +12,8 @@ export function Header() {
     >
       <div className="container mx-auto text-center px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6">
-          <Avatar className="h-64 w-64">
-            <AvatarImage
-              src="src\components\portfolio\AFOTO.jpg"
-              alt="[Seu Nome Completo]"
-            />
+          <Avatar className="h-32 w-32">
+            <AvatarImage src={AFOTO} alt="Caio Matheus" />
             <AvatarFallback>SN</AvatarFallback>
           </Avatar>
           <div className="space-y-2">
