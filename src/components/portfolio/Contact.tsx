@@ -26,7 +26,7 @@ export function Contact() {
           <div className="flex space-x-4">
             <Button variant="outline" size="icon" asChild>
               <a
-                href="https://www.youtube.com/watch?v=TsaLQAetPLU"
+                href="https://github.com/CaioMatheus-cpu"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -36,7 +36,7 @@ export function Contact() {
             </Button>
             <Button variant="outline" size="icon" asChild>
               <a
-                href="https://www.linkedin.com/login/pt"
+                href="https://www.linkedin.com/in/caio-matheus-2568a72b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
