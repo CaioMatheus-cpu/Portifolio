@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export function Contact() {
-  const email = "[seu.email@exemplo.com]";
+  const email = "Caio.Matheus.bz.silva@gmail.com";
   return (
     <section id="contact" className="w-full py-12 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
