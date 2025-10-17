@@ -8,6 +8,12 @@ export default defineConfig(() => ({
     host: "::",
     port: 8080,
   },
+  // --- INÍCIO DA CORREÇÃO ---
+  preview: {
+    host: true, // Permite que o servidor seja acessado pela rede
+    allowedHosts: ['caiomatheus.site'], // Adiciona seu domínio à lista de permissões
+  },
+  // --- FIM DA CORREÇÃO ---
   plugins: [dyadComponentTagger(), react()],
   resolve: {
     alias: {
