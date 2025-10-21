@@ -12,7 +12,7 @@ export function Header() {
       <div className="container mx-auto text-center px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6">
           {/* Avatar com imagem proporcional */}
-          <Avatar className="h-32 w-32 overflow-hidden">
+          <Avatar className="h-64 w-64 overflow-hidden">
             <AvatarImage
               src={AFOTO}
               alt="Caio Matheus"
