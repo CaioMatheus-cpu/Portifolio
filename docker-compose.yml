@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  caiosite:
+    build: . # O ponto indica que o Dockerfile está neste diretório
+    container_name: caiosite_app
+    restart: always
+    # Nenhuma porta externa publicada aqui (ex: 8080:80)
+    # O acesso será feito pela rede proxy_net
+    networks:
+      - proxy_net
+
+networks:
+  proxy_net:
+    external: true # Usará a rede proxy_net que criaremos externamente
