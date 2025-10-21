@@ -15,7 +15,7 @@ const projects = [
     title: "Meu Pequeno Jardim",
     description:
       "Aplicação interativa voltada ao desenvolvimento da inteligência emocional em crianças, combinando tecnologia e aprendizado lúdico.",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    technologies: ["React", "TypeScript", "CSS", "Vite"],
     demoUrl: "#", // link do deploy ou vídeo, se disponível
     repoUrl: "https://github.com/CaioMatheusDev/meu-pequeno-jardim",
   },

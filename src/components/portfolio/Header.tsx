@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
 import AFOTO from "./AFOTO.jpg";
 
-
 export function Header() {
   return (
     <section
@@ -12,10 +11,16 @@ export function Header() {
     >
       <div className="container mx-auto text-center px-4 md:px-6">
         <div className="flex flex-col items-center space-y-6">
-          <Avatar className="h-32 w-32">
-            <AvatarImage src={AFOTO} alt="Caio Matheus" />
-            <AvatarFallback>SN</AvatarFallback>
+          {/* Avatar com imagem proporcional */}
+          <Avatar className="h-32 w-32 overflow-hidden">
+            <AvatarImage
+              src={AFOTO}
+              alt="Caio Matheus"
+              className="object-cover h-full w-full"
+            />
+            <AvatarFallback>CM</AvatarFallback>
           </Avatar>
+
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
               Caio Matheus
@@ -28,6 +33,7 @@ export function Header() {
               design intuitivo.
             </p>
           </div>
+
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg">
               <a href="#projects">
@@ -38,10 +44,11 @@ export function Header() {
               <a href="#contact">Entrar em Contato</a>
             </Button>
           </div>
+
           <div className="flex space-x-4 pt-4">
             <Button variant="outline" size="icon" asChild>
               <a
-                href="https://www.youtube.com/watch?v=TsaLQAetPLU"
+                href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"

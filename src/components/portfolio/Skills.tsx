@@ -9,19 +9,19 @@ import {
 const skillCategories = [
   {
     title: "Linguagens",
-    skills: ["TypeScript", "JavaScript", "Python", "SQL"],
+    skills: ["TypeScript", "JavaScript", "Python", "SQL", "C#", "JAVA" ],
   },
   {
     title: "Front-end",
-    skills: ["React", "Next.js", "Tailwind CSS", "HTML5", "CSS3"],
+    skills: ["React", "Next.js", "Angular", "HTML5", "CSS3"],
   },
   {
     title: "Back-end",
-    skills: ["Node.js", "Express", "Prisma", "PostgreSQL", "Docker"],
+    skills: ["Node.js", "Express", "Docker"],
   },
   {
     title: "Ferramentas",
-    skills: ["Git", "GitHub", "Jest", "Vercel", "Figma"],
+    skills: ["Git", "GitHub", "Vercel", "Figma"],
   },
 ];
 
